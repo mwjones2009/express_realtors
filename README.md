@@ -26,3 +26,10 @@ app.get('/', (req, res) => {
 
 #### Part 4 
 - using our Request Params, create Detail pages that only show one specific apartment or house, based off of the object's index of the array (hint, since arrays start at 0 you may need to do some math to make our params match up our indexes better
+
+
+#### Part 5 - Bonus!
+
+- Once you have your List and Show routes working with the full array of apartments & houses, plus details of the individual ones showing, lets build our first Full Stack application
+-  Run your server at localhost:3000, make sure you have CORS installed and set up in your .js file, and the CORS extension running on your browser
+-  Create and scaffold an HTML, CSS, and JS file, and using the Axios library (which you'll add in to the head of your HTML file) make a call to your localhost:3001 server, pulling in the data that you would like!
