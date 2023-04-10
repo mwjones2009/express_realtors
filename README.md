@@ -30,6 +30,6 @@ app.get('/', (req, res) => {
 
 #### Part 5 - Bonus!
 
-- Once you have your List and Show routes working with the full array of apartments & houses, plus details of the individual ones showing, lets build our first Full Stack application
--  Run your server at localhost:3000, make sure you have CORS installed and set up in your .js file, and the CORS extension running on your browser
+- Once you have your List and Show routes working with the full array of apartments & houses, plus details of the individual ones showing, lets build our first Full Stack application!
+-  Run your server at localhost:3001, make sure you have CORS installed and set up in your .js file, and the CORS extension running on your browser
 -  Create and scaffold an HTML, CSS, and JS file, and using the Axios library (which you'll add in to the head of your HTML file) make a call to your localhost:3001 server, pulling in the data that you would like!
