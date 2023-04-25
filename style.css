@@ -1,0 +1,58 @@
+body {
+  background-image: url("pexels-scott-webb-1022936.jpg");
+  background-color: #cccccc;
+  padding:200px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-position: center;
+  background-size: cover;
+  color:whitesmoke;
+ }
+
+ header {
+   text-align: center;
+   border: 0;
+        padding: 10px;
+        font-size: 18px;
+ }
+ span{
+   color:red;
+ }
+
+ input{
+  border: 0;
+  padding: 10px;
+  font-size: 18px
+ }
+ button {
+  background: turquoise;
+  color: gray;
+  border-radius: 30px;
+  border: 0;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-right:20px;
+
+}
+ul{
+  Padding: 10px;
+  background:transparent;
+  border:2px;
+  }
+  li{
+  display: inline; 
+  padding: 10px 20px;
+  
+  }
+
+  a{
+    color:gray;
+    font-weight: 300;
+    text-decoration: none;
+    justify-content: space-around;
+    width:35%;
+  }
+  
+  h2{
+    letter-spacing: 5px;
+  }

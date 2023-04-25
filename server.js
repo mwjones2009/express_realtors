@@ -1,28 +1,27 @@
 const express = require('express')
-const PORT = 3001
+//const path = require('path')
+const PORT = 5001
+//const button = document.querySelector('#searchBtn')
 const cors = require('cors')
-const catController = require('./controllers/catController.js')
-const dogController = require('./controllers/dogController.js')
 const apartments = require('./apartments.js')
+const houses = require('./houses.js')
 
 
 
 const app = express()
+app.use(express.static('public'));
 app.use(cors())
-app.use(express.json())
 
 
-app.listen(PORT, () => {console.log('working')})
+app.listen(PORT, () => {console.log('Welcome to Jones Realty')})
 
 app.get('/', (req, res) =>{
   res.send({
     msg: 'server running' })})
 
-    app.get('/cats', catController.getCats)
-    app.get('/cats/:id', catController.getCat)
+app.get('/apartments', apartments.getApartments)
+app.get('/apartments/:id', apartments.getApartment)
 
-    app.get('/dogs', dogController.getDogs)
-    app.get('dogs/:id', dogController.getDog)
-
-    app.get('/apartments', apartments.getApartments)
-    app.get('/apartments/:id', apartments.getApartment)
+    app.get('/houses', houses.getHouses)
+    app.get('/houses/:id', houses.getHouse) 
+    app.get('/search',houses.searchHouses)
